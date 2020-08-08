@@ -1,0 +1,13 @@
+---
+- project:
+    name: Dev - Pipeline
+    ftname: 'dev'
+    jobs:
+      - '{ftname}_env_{num}':
+          num: 1
+- project:
+    name: Dev - View'
+    ftname: 'dev'
+    FTNAME: 'DEV'
+    views:
+      - '{FTNAME} pipelines'

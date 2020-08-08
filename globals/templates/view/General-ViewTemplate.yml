@@ -1,0 +1,5 @@
+---
+- view-template:
+    name: '{FTNAME} pipelines'
+    view-type: list
+    regex: ({ftname}_env.*).*

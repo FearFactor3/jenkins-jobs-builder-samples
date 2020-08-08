@@ -1,0 +1,24 @@
+---
+- job-template:
+    name: '{ftname}_env_{num}'
+    defaults: global
+    project-type: pipeline
+    sandbox: false
+    parameters:
+      - string:
+          name: Branchname
+          default: master
+      - bool:
+          name: ProvisionApp
+          default: true
+    pipeline-scm:
+      scm:
+        - git:
+            url: http://thisiscrap.com
+            credentials-id: thisuser
+            branches:
+              - origin/master
+            browser: auto
+            wipe-workspace: false
+      script-path: yourpathhere
+      lightweight-checkout: false 

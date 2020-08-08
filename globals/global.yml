@@ -1,0 +1,11 @@
+---
+- defaults:
+    name: global
+    build-discarder:
+      daysToKeep: -1
+      numToKeep: 10
+      artifactDaysToKeep: -1
+      artifactNumToKeep: -1
+    concurrent: false
+    ftname: 'dev'
+    FTNAME: 'DEV'
